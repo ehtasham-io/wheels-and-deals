@@ -117,7 +117,7 @@ header.banner .nav-links a:hover {
   color: #fff;
   padding: 50px 20px;
   position: relative;
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 .hero::after {
