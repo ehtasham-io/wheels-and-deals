@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Service</title>
+    <link rel="stylesheet" href="css/Maintainance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="banner">
+        <div class="logo-container">
+            <img class="logo" src="images/logo.png" alt="Company Logo">
+            <span class="brand-name">Wheels & Deals</span>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-car"></i> Inventory<i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="New.html"><i class="fas fa-car-side"></i> New Cars</a>
+                    <a href="Used.html"><i class="fas fa-car-alt"></i> Used Cars</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-cogs"></i> Services <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="maintainance.html"><i class="fas fa-wrench"></i> Maintenance</a>
+                    <a href="Spare.html"><i class="fas fa-cogs"></i> Spare Parts</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-dollar-sign"></i> Finance <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a>
+                    <a href="sell.html"><i class="fas fa-hand-holding-usd"></i> Sell</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-user"></i> Join Now <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div class="form-container">
+            <h2>Car Details & Service Preferences</h2>
+            <br>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <select id="city" name="city" aria-label="Select your City" required>
+                        <option value="" disabled selected>Select your City</option>
+                        <option value="Abbottabad">Abbottabad</option>
+                        <option value="Bahawalpur">Bahawalpur</option>
+                        <option value="Chitral">Chitral</option>
+                        <option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+                        <option value="Faisalabad">Faisalabad</option>
+                        <option value="Gilgit">Gilgit</option>
+                        <option value="Gujranwala">Gujranwala</option>
+                        <option value="Gwadar">Gwadar</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Khuzdar">Khuzdar</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Larkana">Larkana</option>
+                        <option value="Multan">Multan</option>
+                        <option value="Muzaffarabad">Muzaffarabad</option>
+                        <option value="Mardan">Mardan</option>
+                        <option value="Peshawar">Peshawar</option>
+                        <option value="Quetta">Quetta</option>
+                        <option value="Rahim Yar Khan">Rahim Yar Khan</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Sargodha">Sargodha</option>
+                        <option value="Sialkot">Sialkot</option>
+                        <option value="Sukkur">Sukkur</option>
+                        <option value="Swat">Swat</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="car-brand">Car Brand</label>
+                    <select id="car-brand" name="car-brand" aria-label="Select Car Brand" required>
+                        <option value="" disabled selected>Select Car Brand</option>
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Bentley">Bentley</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Buick">Buick</option>
+                        <option value="Cadillac">Cadillac</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Chrysler">Chrysler</option>
+                        <option value="Citroen">Citroen</option>
+                        <option value="Dodge">Dodge</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Ford">Ford</option>
+                        <option value="GMC">GMC</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Jaguar">Jaguar</option>
+                        <option value="Jeep">Jeep</option>
+                        <option value="Kia">Kia</option>
+                        <option value="Land Rover">Land Rover</option>
+                        <option value="Lexus">Lexus</option>
+                        <option value="Lincoln">Lincoln</option>
+                        <option value="Maserati">Maserati</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="Mitsubishi">Mitsubishi</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Peugeot">Peugeot</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Ram">Ram</option>
+                        <option value="Renault">Renault</option>
+                        <option value="Rolls-Royce">Rolls-Royce</option>
+                        <option value="Subaru">Subaru</option>
+                        <option value="Suzuki">Suzuki</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Volvo">Volvo</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="car-model">Car Model</label>
+                    <input type="text" id="car-model" name="car-model" placeholder="Enter your car model" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="car-year">Year of Manufacture</label>
+                    <select id="car-year" name="car-year" aria-label="Select Year" required>
+                        <option value="" disabled selected>Select Year</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="service-type">Service Type</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="" disabled selected>Select Service Type</option>
+                        <option value="oil-change">Oil Change</option>
+                        <option value="tire-rotation">Tire Rotation</option>
+                        <option value="brake-check">Brake Check</option>
+                        <option value="engine-tune-up">Engine Tune-Up</option>
+                        <option value="general-inspection">General Inspection</option>
+                        <option value="battery-replacement">Battery Replacement</option>
+                        <option value="transmission-service">Transmission Service</option>
+                        <option value="coolant-flush">Coolant Flush</option>
+                        <option value="wheel-alignment">Wheel Alignment</option>
+                        <option value="exhaust-repair">Exhaust Repair</option>
+                        <option value="air-conditioning-service">Air Conditioning Service</option>
+                        <option value="suspension-repair">Suspension Repair</option>
+                        <option value="electrical-system-diagnosis">Electrical System Diagnosis</option>
+                        <option value="car-wash-and-detailing">Car Wash and Detailing</option>
+                        <option value="paint-touch-ups">Paint Touch-Ups</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preferred-date">Preferred Service Date</label>
+                    <input type="date" id="preferred-date" name="preferred-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-time">Preferred Service Time</label>
+                    <select id="preferred-time" name="preferred-time" required>
+                        <option value="" disabled selected>Select Time Slot</option>
+                        <option value="early-morning">Early Morning (7:00 AM - 9:00 AM)</option>
+                        <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                        <option value="late-morning">Late Morning (10:00 AM - 12:00 PM)</option>
+                        <option value="early-afternoon">Early Afternoon (12:00 PM - 2:00 PM)</option>
+                        <option value="afternoon">Afternoon (2:00 PM - 4:00 PM)</option>
+                        <option value="late-afternoon">Late Afternoon (3:00 PM - 6:00 PM)</option>
+                        <option value="early-evening">Early Evening (4:00 PM - 6:00 PM)</option>
+                        <option value="evening">Evening (6:00 PM - 8:00 PM)</option>
+                        <option value="late-evening">Late Evening (8:00 PM - 10:00 PM)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-name">Your Name</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                <label for="phone-number"><i></i> Phone Number</label>
+                <input type="text" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
+            </div>
+                <div class="form-group">
+                    <label for="user-email">Email Address</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Schedule Service</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="info-container">
+            <h2>Why Choose Us?</h2>
+            <p>
+                At  Wheels & Deals, we specialize in caring for all critical car components. Our services include 
+                maintaining and repairing engines, pistons, suspensions, brakes, and other integral systems. We ensure 
+                the optimal performance of your car and provide detailed inspections to prevent unexpected issues.
+            </p>
+            <p>
+                In addition to our comprehensive maintenance and repair services, we specialize in advanced cleaning and refurbishment. From deep-cleaning car seats and upholstery to restoring your car's interior surfaces, our state-of-the-art technology and eco-friendly products ensure your vehicle looks and feels like new. Our commitment to excellence guarantees meticulous attention to detail, providing you with a pristine and comfortable driving experience.
+            </p>
+            <img src="images/Q.jpeg" alt="Car Service Experience">
+            <p>
+                Experience the latest innovations, including AI-based diagnostics and eco-friendly cleaning solutions. 
+                With our expert technicians and cutting-edge tools, we guarantee a service experience that exceeds expectations.
+            </p>
+            <img src="images/Q.jpg" alt="Additional Car Service Image" class="additional-image">
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section top-brands">
+                <h3>Top Brands</h3>
+                <ul>
+                    <li><a href="#">Toyota Cars</a></li>
+                    <li><a href="#">Suzuki Cars</a></li>
+                    <li><a href="#">Honda Cars</a></li>
+                    <li><a href="#">Mercedes Cars</a></li>
+                    <li><a href="#">Hyundai Cars</a></li>
+                </ul>
+            </div>
+            <div class="footer-section address-info">
+                <h3>Address Information</h3>
+                <p>Email: <a href="mailto:wheelsanddeals.pk@gmail.com">wheelsanddeals.pk@gmail.com</a></p>
+                <p>Phone: <a href="tel:+923001110048">+92 (300)-111-0048</a></p>
+                <p>Address: UET Lahore (Narowal Campus), Plot No. 1, Muridke Road, Narowal.</p>
+                <p>Working Hours: Mon - Fri: 09:00AM - 06:00PM</p>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    <br>
+                    <br>
+                    <h3>Contact US</h3>
+                    <a href="Contact.html"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- <img src="images/logo.png" alt="Wheels & Deals.PK Logo" class="footer-logo"> -->
+            <p>We provide expert automotive solutions, offering a wide variety of new and used cars. Visit us for the best deals and services.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            <p class="footer-copyright">&copy; 2024 Wheels&Deals.PK, All Rights Reserved.</p>
+        </div>
+      </footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Loan Calculator</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="banner">
+        <div class="logo-container">
+            <img class="logo" src="images/logo.png" alt="Company Logo">
+            <span class="brand-name">Wheels & Deals</span>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-car"></i> Inventory<i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="New.html"><i class="fas fa-car-side"></i> New Cars</a>
+                    <a href="Used.html"><i class="fas fa-car-alt"></i> Used Cars</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-cogs"></i> Services <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="maintainance.html"><i class="fas fa-wrench"></i> Maintenance</a>
+                    <a href="Spare.html"><i class="fas fa-cogs"></i> Spare Parts</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-dollar-sign"></i> Finance <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a>
+                    <a href="sell.html"><i class="fas fa-hand-holding-usd"></i> Sell</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-user"></i> Join Now <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Your Car At Your Door Step</h2>
+                <!-- <p>Experience the best car deals and services with us.</p> -->
+                <br>
+                <img src="images/Book1.jpeg" alt="Ad Banner">
+            </div>
+        </section>
+
+    <main>
+        <section class="loan-section">
+            <div class="illustration-container">
+                <img src="images/Book.png" alt="Car Keys Illustration">
+                <p>Affordable Car Financing Calculator and Car Loans in Pakistan</p>
+            </div>
+            <div class="calculator-container">
+                <h1>Book Your Car</h1>
+                <!-- <input type="radio" id="new-cars" name="tab" checked>
+                <label for="new-cars" class="tab-label">New Cars</label>
+                <input type="radio" id="used-cars" name="tab">
+                <label for="used-cars" class="tab-label">Used Cars</label>
+                <div class="tab-content" id="new-cars-content"> -->
+                    <form class="loan-form">
+                        <label for="city">Select City</label>
+                        <select id="city" name="city">
+                            <option value="karachi">.</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="karachi">Quetta</option>
+                            <option value="lahore">Peshawar</option>
+                            <option value="islamabad">Sargodha</option>
+                            <option value="karachi">Faisalabad</option>
+                            <option value="lahore">Murree</option>
+                            <option value="islamabad">Swat</option>
+                            <!-- Add more cities as needed -->
+                        </select>
+
+                        <label for="city">Select Brand</label>
+                        <select id="city" name="city">
+                            <option value="karachi">.</option>
+                            <option value="karachi">Honda</option>
+                            <option value="lahore">Toyota</option>
+                            <option value="islamabad">Suzuki</option>
+                            <option value="karachi">Mercedes</option>
+                            <option value="lahore">Hyndai</option>
+                            <!-- Add more cities as needed -->
+                        </select>
+                        
+                        <label for="model">Make/Model/Version</label>
+                        <input type="text" id="model" name="model" placeholder="e.g., Toyota Corolla">
+                        
+                        <label for="price">Bank Details </label>
+                        <input type="number" id="price" name="price" placeholder="e.g., Card Number">
+
+                        <label for="price">Address </label>
+                        <input type="number" id="price" name="price" placeholder="e.g., Xyz">
+                        
+                        <!-- <label for="tenure">Select Tenure</label>
+                        <select id="tenure" name="tenure">
+                            <option value="1 year">1 Year</option>
+                            <option value="2 years">2 Years</option>
+                            <option value="3 years">3 Years</option>
+                            <Add more options as needed -->
+                        </select>
+                        
+                        <!-- <label for="down-payment">Select Down Payment</label>
+                        <select id="down-payment" name="down-payment">
+                            <option value="10%">10%</option>
+                            <option value="20%">20%</option>
+                            <option value="30%">30%</option>
+                            <1 Add more options as needed -->
+                        </select>
+                         
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+                <div class="tab-content" id="used-cars-content">
+                    <!-- Similar form structure for used cars -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section top-brands">
+                <h3>Top Brands</h3>
+                <ul>
+                    <li><a href="#">Toyota Cars</a></li>
+                    <li><a href="#">Suzuki Cars</a></li>
+                    <li><a href="#">Honda Cars</a></li>
+                    <li><a href="#">Mercedes Cars</a></li>
+                    <li><a href="#">Hyundai Cars</a></li>
+                </ul>
+            </div>
+            <div class="footer-section address-info">
+                <h3>Address Information</h3>
+                <p>Email: <a href="mailto:wheelsanddeals.pk@gmail.com">wheelsanddeals.pk@gmail.com</a></p>
+                <p>Phone: <a href="tel:+923001110048">+92 (300)-111-0048</a></p>
+                <p>Address: UET Lahore (Narowal Campus), Plot No. 1, Muridke Road, Narowal.</p>
+                <p>Working Hours: Mon - Fri: 09:00AM - 06:00PM</p>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    <br>
+                    <br>
+                    <h3>Contact US</h3>
+                    <a href="Contact.html"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- <img src="images/logo.png" alt="Wheels & Deals.PK Logo" class="footer-logo"> -->
+            <p>We provide expert automotive solutions, offering a wide variety of new and used cars. Visit us for the best deals and services.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+         
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            <p class="footer-copyright">&copy; 2024 Wheels&Deals.PK, All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

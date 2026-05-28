@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sell Your Car - Wheels & Deals</title>
+    <link rel="stylesheet" href="css/sell.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="banner">
+        <div class="logo-container">
+            <img class="logo" src="images/logo.png" alt="Company Logo">
+            <span class="brand-name">Wheels & Deals</span>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-car"></i> Inventory<i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="New.html"><i class="fas fa-car-side"></i> New Cars</a>
+                    <a href="Used.html"><i class="fas fa-car-alt"></i> Used Cars</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-cogs"></i> Services <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="maintainance.html"><i class="fas fa-wrench"></i> Maintenance</a>
+                    <a href="Spare.html"><i class="fas fa-cogs"></i> Spare Parts</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-dollar-sign"></i> Finance <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a>
+                    <a href="sell.html"><i class="fas fa-hand-holding-usd"></i> Sell</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-user"></i> Join Now <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Sell Your Car with Ease</h2>
+            <p>Get the best price for your car with our trusted platform.</p>
+            <br>
+            <img src="images/Feedback.png" alt="Sell Your Car">
+        </div>
+    </section>
+
+    <!-- Sell Your Car Form Section -->
+    <main>
+        <section class="sell-section">
+            <h1>Sell Your Car</h1>
+            <p>Fill out the form below to list your car for sale. Our team will review your details and get back to you with the best offers.</p>
+            <form class="sell-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="brand">Car Brand</label>
+                <input type="text" id="brand" name="brand" placeholder="e.g., Toyota" required>
+
+                <label for="model">Car Model</label>
+                <input type="text" id="model" name="model" placeholder="e.g., Corolla" required>
+
+                <label for="year">Year of Manufacture</label>
+                <input type="number" id="year" name="year" placeholder="e.g., 2018" required>
+
+                <label for="mileage">Mileage (km)</label>
+                <input type="number" id="mileage" name="mileage" placeholder="e.g., 50000" required>
+
+                <label for="price">Expected Price (PKR)</label>
+                <input type="number" id="price" name="price" placeholder="Enter your expected price" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Enter additional details about your car"></textarea>
+
+                <label for="images">Upload Images</label>
+                <input type="file" id="images" name="images" multiple>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section top-brands">
+                <h3>Top Brands</h3>
+                <ul>
+                    <li><a href="#">Toyota Cars</a></li>
+                    <li><a href="#">Suzuki Cars</a></li>
+                    <li><a href="#">Honda Cars</a></li>
+                    <li><a href="#">Mercedes Cars</a></li>
+                    <li><a href="#">Hyundai Cars</a></li>
+                </ul>
+            </div>
+            <div class="footer-section address-info">
+                <h3>Address Information</h3>
+                <p>Email: <a href="mailto:wheelsanddeals.pk@gmail.com">wheelsanddeals.pk@gmail.com</a></p>
+                <p>Phone: <a href="tel:+923001110048">+92 (300)-111-0048</a></p>
+                <p>Address: UET Lahore (Narowal Campus), Plot No. 1, Muridke Road, Narowal.</p>
+                <p>Working Hours: Mon - Fri: 09:00AM - 06:00PM</p>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    <br>
+                    <br>
+                    <h3>Contact US</h3>
+                    <a href="Contact.html"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- <img src="images/logo.png" alt="Wheels & Deals.PK Logo" class="footer-logo"> -->
+            <p>We provide expert automotive solutions, offering a wide variety of new and used cars. Visit us for the best deals and services.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            <p class="footer-copyright">&copy; 2024 Wheels&Deals.PK, All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

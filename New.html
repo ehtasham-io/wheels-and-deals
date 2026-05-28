@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="css/New.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Added Font Awesome link -->
+</head>
+<body>
+    <header class="banner">
+        <div class="logo-container">
+            <img class="logo" src="images/logo.png" alt="Company Logo">
+            <span class="brand-name">Wheels & Deals</span>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-car"></i> Inventory<i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="New.html"><i class="fas fa-car-side"></i> New Cars</a>
+                    <a href="Used.html"><i class="fas fa-car-alt"></i> Used Cars</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-cogs"></i> Services <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="maintainance.html"><i class="fas fa-wrench"></i> Maintenance</a>
+                    <a href="Spare.html"><i class="fas fa-cogs"></i> Spare Parts</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-dollar-sign"></i> Finance <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a>
+                    <a href="sell.html"><i class="fas fa-hand-holding-usd"></i> Sell</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-user"></i> Join Now <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- <h2>Your Dream Car Awaits!</h2> -->
+            <!-- <p><b><i>Where Luxury Meets Power.</i></b></p> -->
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section id="inventory" class="inventory">
+        <h2 class="section-heading">Featured Cars</h2>
+        <br>
+        <!-- Filter and Sort Section -->
+        <div class="filter-sort">
+            <div class="filters">
+                <label for="brand">Filter by Brand:</label>
+                <select id="brand">
+                    <option value="all">All</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Mercedes">Mercecdes</option>
+                </select>
+            </div>
+            <div class="sort">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="price">Price Low to High</option>
+                    <option value="year">Price High to Low</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+        
+        <div class="car-list">
+            <div class="car-card" data-brand="Honda">
+                <img src="images/Civic.jpeg" alt="Honda Civic" class="car-image">
+                <h3>Honda Civic</h3>
+                <p>Rs. 95000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Honda">
+                <img src="images/City.jpeg" alt="Honda City" class="car-image">
+                <h3>Honda City</h3>
+                <p>Rs. 6000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Honda">
+                <img src="images/H-RV.jpeg" alt="Honda H-RV" class="car-image">
+                <h3>Honda H-RV</h3>
+                <p>Rs. 8500000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Honda">
+                <img src="images/Hybrid.webp" alt="Honda Hybrid" class="car-image">
+                <h3>Honda Hybrid</h3>
+                <p>Rs. 7200000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Honda">
+                <img src="images/Prolouge.webp" alt="Honda Prologue" class="car-image">
+                <h3>Honda Prologue</h3>
+                <p>Rs. 12000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Honda">
+                <img src="images/CR-V.jpeg" alt="Honda CR-V" class="car-image">
+                <h3>Honda CR-V</h3>
+                <p>Rs. 7800000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+
+            <div class="car-card" data-brand="Toyota">
+                <img src="images/Yaris.jpeg" alt="Toyota Yaris" class="car-image">
+                <h3>Toyota Yaris </h3>
+                <p>Rs. 5000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Toyota">
+                <img src="images/Revo.jpeg" alt="Toyota Revo" class="car-image">
+                <h3>Toyota Revo </h3>
+                <p>Rs. 20000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Toyota">
+                <img src="images/GLI.jpeg" alt="Toyota GLI" class="car-image">
+                <h3>Toyota GLI</h3>
+                <p>Rs. 7000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Toyota">
+                <img src="images/Altis.jpeg" alt="Toyota Altis" class="car-image">
+                <h3>Toyota Altis </h3>
+                <p>Rs. 10000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Toyota">
+                <img src="images/Fortuner.jpeg" alt="Toyota Fortuner" class="car-image">
+                <h3>Toyota Fortuner </h3>
+                <p>Rs. 65000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Toyota">
+                <img src="images/Vitz.jpeg" alt="Toyota Vitz" class="car-image">
+                <h3>Toyota Vitz </h3>
+                <p>Rs. 4500000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <div class="car-card" data-brand="Mercedes">
+                <img src="images/Maybach.jpeg" alt="Mercedes Maybach" class="car-image">
+                <h3>Mercedes Maybach</h3>
+                <p>Rs. 80000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Mercedes">
+                <img src="images/C-Class.jpg" alt="Mercedes C-Class" class="car-image">
+                <h3>Mercedes C-Class</h3>
+                <p>Rs. 20000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Mercedes">
+                <img src="images/E-Class.jpg" alt="Mercedes E-Class" class="car-image">
+                <h3>Mercedes E-Class</h3>
+                <p>Rs. 25000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Mercedes">
+                <img src="images/S-Class.jpg" alt="Mercedes S-Class" class="car-image">
+                <h3>Mercedes S-Class</h3>
+                <p>Rs. 30000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Mercedes">
+                <img src="images/GLB.jpg" alt="Mercedes GLB" class="car-image">
+                <h3>Mercedes GLB</h3>
+                <p>Rs. 15000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Mercedes">
+                <img src="images/EQS.jpg" alt="Mercedes EQS" class="car-image">
+                <h3>Mercedes EQS</h3>
+                <p>Rs. 10000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+
+            <div class="car-card" data-brand="Suzuki">
+                <img src="images/Alto.jpeg" alt="Suzuki Alto" class="car-image">
+                <h3>Suzuki Alto</h3>
+                <p>Rs. 3000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Suzuki">
+                <img src="images/Swift.jpeg" alt="Suzuki Swift" class="car-image">
+                <h3>Suzuki Swift</h3>
+                <p>Rs. 5500000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Suzuki">
+                <img src="images/Every.jpg" alt="Suzuki Every" class="car-image">
+                <h3>Suzuki Every</h3>
+                <p>Rs. 2600000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Suzuki">
+                <img src="images/Baleno.jpeg" alt="Suzuki Baleno" class="car-image">
+                <h3>Suzuki Baleno</h3>
+                <p>Rs. 3500000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Suzuki">
+                <img src="images/S-Cross.jpeg" alt="Suzuki S-Cross" class="car-image">
+                <h3>Suzuki S-Cross</h3>
+                <p>Rs. 5000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card" data-brand="Suzuki">
+                <img src="images/Swace.jpeg" alt="Suzuki Swace" class="car-image">
+                <h3>Suzuki Swace</h3>
+                <p>Rs. 6000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2 class="section-heading">About Us</h2>
+        <p>At Wheels & Deals, we offer a wide selection of new and used vehicles. Our team is dedicated to providing the best customer service and helping you find the perfect car.</p>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section top-brands">
+                <h3>Top Brands</h3>
+                <ul>
+                    <li><a href="#">Toyota Cars</a></li>
+                    <li><a href="#">Suzuki Cars</a></li>
+                    <li><a href="#">Honda Cars</a></li>
+                    <li><a href="#">Mercedes Cars</a></li>
+                    <li><a href="#">Hyundai Cars</a></li>
+                </ul>
+            </div>
+            <div class="footer-section address-info">
+                <h3>Address Information</h3>
+                <p>Email: <a href="mailto:wheelsanddeals.pk@gmail.com">wheelsanddeals.pk@gmail.com</a></p>
+                <p>Phone: <a href="tel:+923001110048">+92 (300)-111-0048</a></p>
+                <p>Address: UET Lahore (Narowal Campus), Plot No. 1, Muridke Road, Narowal.</p>
+                <p>Working Hours: Mon - Fri: 09:00AM - 06:00PM</p>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    <br>
+                    <br>
+                    <h3>Contact US</h3>
+                    <a href="Contact.html"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- <img src="images/logo.png" alt="Wheels & Deals.PK Logo" class="footer-logo"> -->
+            <p>We provide expert automotive solutions, offering a wide variety of new and used cars. Visit us for the best deals and services.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            <p class="footer-copyright">&copy; 2024 Wheels&Deals.PK, All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="css/Used.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="banner">
+        <div class="logo-container">
+            <img class="logo" src="images/logo.png" alt="Company Logo">
+            <span class="brand-name">Wheels & Deals</span>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html"><i class="fas fa-home"></i> Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-car"></i> Inventory<i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="New.html"><i class="fas fa-car-side"></i> New Cars</a>
+                    <a href="Used.html"><i class="fas fa-car-alt"></i> Used Cars</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-cogs"></i> Services <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="maintainance.html"><i class="fas fa-wrench"></i> Maintenance</a>
+                    <a href="Spare.html"><i class="fas fa-cogs"></i> Spare Parts</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-dollar-sign"></i> Finance <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a>
+                    <a href="sell.html"><i class="fas fa-hand-holding-usd"></i> Sell</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-user"></i> Join Now <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Your Ride, Our Responsibility</h2>
+            <p>Experience the best car deals and services with us.</p>
+            <br>
+            <img src="images/Ad.png" alt="Ad Banner">
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section id="inventory" class="inventory">
+        <div class="filter-sort">
+            <div class="filters">
+                <label for="brand">Filter by Brand:</label>
+                <select id="brand">
+                    <option value="all">All</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Mercedes">Mercedes</option>
+                </select>
+            </div>
+            <div class="sort">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="price">Price Low to High</option>
+                    <option value="year">Price High to Low</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="car-list">
+            <div class="car-card">
+                <img src="images/Civic Used.jpeg" alt="Honda Civic 2018">
+                <h3>Honda Civic 2018</h3>
+                <p>Rs. 5000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card">
+                <img src="images/Toyota Used.jpeg" alt="Toyota Yaris 2017">
+                <h3>Toyota Yaris 2017</h3>
+                <p>Rs. 4500000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card">
+                <img src="images/Vitz Used.jpeg" alt="Toyota Vitz 2019">
+                <h3>Toyota Vitz 2019</h3>
+                <p>Rs. 2500000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card">
+                <img src="images/Fortuner Used.jpeg" alt="Toyata Fortuner 2022">
+                <h3>Toyota Fortuner 2022</h3>
+                <p>Rs. 9000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <div class="car-card">
+                <img src="images/City Used.JPG" alt="Honda City 2011">
+                <h3>Honda City 2011</h3>
+                <p>Rs. 2857000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card">
+                <img src="images/Land Crusier Used.jpeg" alt="Toyota Land Crusier 2007">
+                <h3>Toyota Land Crusier 2007</h3>
+                <p>Rs. 4500000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card">
+                <img src="images/Swift Used.jpeg" alt="Suzuki Swift 2015">
+                <h3>Suzuki Swift 2015</h3>
+                <p>Rs. 1500000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="car-card">
+                <img src="images/Supra Used.jpeg" alt="Toyota Supra Mk4">
+                <h3>Toyota Supra Mk4</h3>
+                <p>Rs. 10000000</p>
+                <a href="booking.html" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <img src="images/Tips.png" alt="Ad Banner">
+        <br>
+        <h2>About Us</h2>
+        <p>At CarDealers, we offer a wide selection of new and used vehicles. Our team is dedicated to providing the best customer service and helping you find the perfect car.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section top-brands">
+                <h3>Top Brands</h3>
+                <ul>
+                    <li><a href="#">Toyota Cars</a></li>
+                    <li><a href="#">Suzuki Cars</a></li>
+                    <li><a href="#">Honda Cars</a></li>
+                    <li><a href="#">Mercedes Cars</a></li>
+                    <li><a href="#">Hyundai Cars</a></li>
+                </ul>
+            </div>
+            <div class="footer-section address-info">
+                <h3>Address Information</h3>
+                <p>Email: <a href="mailto:wheelsanddeals.pk@gmail.com">wheelsanddeals.pk@gmail.com</a></p>
+                <p>Phone: <a href="tel:+923001110048">+92 (300)-111-0048</a></p>
+                <p>Address: UET Lahore (Narowal Campus), Plot No. 1, Muridke Road, Narowal.</p>
+                <p>Working Hours: Mon - Fri: 09:00AM - 06:00PM</p>
+            </div>
+            <div class="footer-section follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    <br>
+                    <br>
+                    <h3>Contact US</h3>
+                    <a href="Contact.html"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- <img src="images/logo.png" alt="Wheels & Deals.PK Logo" class="footer-logo"> -->
+            <p>We provide expert automotive solutions, offering a wide variety of new and used cars. Visit us for the best deals and services.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            <p class="footer-copyright">&copy; 2024 Wheels&Deals.PK, All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
